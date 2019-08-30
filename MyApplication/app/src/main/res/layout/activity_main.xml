@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/yinsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="隐私"
+            />
+        <Button
+            android:id="@+id/Noyinsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不隐私"
+            />
+        <Button
+            android:id="@+id/look"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="看直播"
+            />
+        <Button
+            android:id="@+id/shexiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="摄像头"
+            />
+    </LinearLayout>
+
+    <com.tencent.rtmp.ui.TXCloudVideoView
+        android:id="@+id/pusher_tx_cloud_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+</LinearLayout>
